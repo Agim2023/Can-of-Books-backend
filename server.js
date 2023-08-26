@@ -73,7 +73,7 @@ app.put("/books/:id", async (request, response) => {
       new: true, // Return the update
     });
     if (!updatedBook) {
-      response.status(404).json({ error: "Book not found" });
+      response.status(404).json({ error: 'Book not found' });
       return;
     }
     response.json(updatedBook);
